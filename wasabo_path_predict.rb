@@ -12,10 +12,9 @@ Plugin.define do
   passive do
     m = []
     begin
-    #   output = `python3 /Users/xiebeichen/Downloads/TDA602/path_predictor.py "#{@base_uri}" 2>/dev/null`
-      output = `/Users/xiebeichen/Downloads/softwares/miniconda3/envs/tda233/bin/python /Users/xiebeichen/Downloads/TDA602/path_predictor.py "#{@base_uri}" 2>/dev/null`
+      output = `python path_predictor.py "#{@base_uri}" 2>/dev/null`
 
-      # 更稳健地提取 JSON 行
+      # More robustly extract the JSON line
       json_str = output.lines.find { |line| line.strip.start_with?('{') && line.strip.end_with?('}') }
       data = JSON.parse(json_str) rescue nil
 
