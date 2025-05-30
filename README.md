@@ -84,18 +84,23 @@ Deceptive Fingerprinting
 	•	Redirect or suppress critical fingerprinting paths
 
  ## ✅ Expected Behavior
- 
+
+ Different behaviors:
 	•	Before evasion: Tools detect WordPress, PHP, and Nginx correctly
 	•	After evasion: Static tools fail to identify the stack
 	•	With plugins: Hidden structures and scripts are rediscovered
 	•	With deception: Tools report falsified server/CMS versions
 
  ## 📦 Requirements
+
+ Environment requirements:
 	•	Docker
 	•	Python 3 (requests)
 	•	Node.js (puppeteer)
 	•	Ruby (for WhatWeb)
 
  ## 💡 Notes
+
+ Reminder:
 	•	Ensure all helper scripts are in the correct relative paths for plugins to function.
 	•	You can customize the list of paths, indicators, or header values based on your evasion goals.
