@@ -13,7 +13,7 @@ Plugin.define do
     m = []
 
     begin
-      output = `node /Users/xiebeichen/Downloads/TDA602/WhatWeb/detect-wordpress.js "#{@base_uri}" 2>/dev/null`
+      output = `node detect-wordpress.js "#{@base_uri}" 2>/dev/null`
       matches = output.scan(/❗ Found indicator: (.+)/)
 
       if matches.any?
