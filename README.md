@@ -1,7 +1,6 @@
-# fingerprint-evasion-lab
-A research-driven toolkit and experimental framework for analyzing, evading, and enhancing web application fingerprinting tools like WhatWeb and Wappalyzer. Includes custom plugins, evasive test environments, and deception-based defense techniques inspired by the WASABO model.
-
 # 🕵️‍♂️ Fingerprint Evasion Lab
+
+A research-driven toolkit and experimental framework for analyzing, evading, and enhancing web application fingerprinting tools like WhatWeb and Wappalyzer. Includes custom plugins, evasive test environments, and deception-based defense techniques inspired by the WASABO model.
 
 This project explores how fingerprinting tools can be evaded, extended, and deceived. It centers around a local WordPress deployment hidden behind a Dockerized reverse proxy and targets tools like WhatWeb and Wappalyzer.
 
