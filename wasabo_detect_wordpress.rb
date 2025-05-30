@@ -1,7 +1,7 @@
 Plugin.define do
   name "wasabo_detect_wordpress"
   authors [
-    "Beichen Xie <beichen@chalmers.se>" # v0.1 # 2024-05-27
+    "Beichen Xie <beichen@chalmers.se>" # v0.1 # 2025-05-18
   ]
   version "0.1"
   description "Uses Puppeteer to inspect final rendered DOM and detect WordPress-specific patterns."
