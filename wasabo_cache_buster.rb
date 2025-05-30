@@ -1,7 +1,7 @@
 Plugin.define do
   name "wasabo_cache_buster"
   authors [
-    "Beichen Xie <beichen@chalmers.se>" # v0.1 # 2024-05-27
+    "Beichen Xie <beichen@chalmers.se>" # v0.1 # 2025-05-18
   ]
   version "0.1"
   description "Attempts cache-busting on suspected static resources to detect responsive assets and uncover potential fingerprinting vectors."
