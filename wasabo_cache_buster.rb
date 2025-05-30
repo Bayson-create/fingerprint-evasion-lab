@@ -13,7 +13,7 @@ Plugin.define do
     m = []
 
     begin
-      output = `/Users/xiebeichen/Downloads/softwares/miniconda3/envs/tda233/bin/python /Users/xiebeichen/Downloads/TDA602/cache_buster.py "#{@base_uri}" 2>/dev/null`
+      output = `python cache_buster.py "#{@base_uri}" 2>/dev/null`
       lines = output.lines.select { |line| line.strip.start_with?("[") }
 
       if lines.any?
